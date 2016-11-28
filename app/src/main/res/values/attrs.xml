@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DiscrollView_LayoutParams">
+        <attr name="discroll_alpha" format="boolean" />
+        <attr name="discroll_scaleX" format="boolean" />
+        <attr name="discroll_scaleY" format="boolean" />
+        <attr name="discroll_fromBgColor" format="color" />
+        <attr name="discroll_toBgColor" format="color" />
+        <attr name="discroll_translation"/>
+    </declare-styleable>
+    <attr name="discroll_translation">
+        <flag name="fromTop" value="0x01" />
+        <flag name="fromBottom" value="0x02" />
+        <flag name="fromLeft" value="0x04" />
+        <flag name="fromRight" value="0x8" />
+    </attr>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dssps.discrollview.DiscrollScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:discrollve="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dssps.discrollview.MainActivity">
+
+    <com.dssps.discrollview.DiscrollLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img"
+            android:tag="1"
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:src="@mipmap/ba"
+            android:scaleType="fitXY"
+            />
+        <TextView
+            android:id="@+id/tv"
+            android:tag="2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text="透明度变化"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            discrollve:discroll_alpha="true"
+            discrollve:discroll_scaleX="true"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ball"
+            android:layout_gravity="center"
+            discrollve:discroll_translation="fromLeft"
+            />
+        <TextView
+            android:tag="2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:text="颜色变化"
+            android:gravity="center"
+            discrollve:discroll_fromBgColor="#39DAC6"
+            discrollve:discroll_toBgColor="#EE5A40"
+            />
+
+    </com.dssps.discrollview.DiscrollLinearLayout>
+
+</com.dssps.discrollview.DiscrollScrollView>
